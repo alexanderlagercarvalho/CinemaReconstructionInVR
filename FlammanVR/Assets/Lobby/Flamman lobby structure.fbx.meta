@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Dark
+    second: {fileID: 2100000, guid: 646a6cf8c0eadff4383581922376f856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Dark marble
     second: {fileID: 2100000, guid: 85015676e6d46634fb76b974f08f1782, type: 2}
   - first:
@@ -64,6 +69,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Window_material
     second: {fileID: 2100000, guid: 639a0e766929b85488d445a27a43445c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood handle
+    second: {fileID: 2100000, guid: 64c334804e7120145902e0a9f730e234, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
