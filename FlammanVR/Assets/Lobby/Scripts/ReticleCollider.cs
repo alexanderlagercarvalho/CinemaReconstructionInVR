@@ -27,32 +27,29 @@ public class ReticleCollider : MonoBehaviour
     {
 
         reticle = GameObject.Find("Reticle");
-       
+
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other == reticle.GetComponent<MeshCollider>())
-        {
-            reticle.GetComponent<MeshRenderer>().material = TPDisabled;
-            right.enableInputActions = false;
-        }
+        reticle = GameObject.Find("Reticle");
+        reticle.GetComponent<MeshRenderer>().material = TPDisabled;
+        right.enableInputActions = false;
+
 
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other == reticle.GetComponent<MeshCollider>())
-        {
-            reticle.GetComponent<MeshRenderer>().material = TPDisabled;
-            right.enableInputActions = false;
-        }
+        reticle = GameObject.Find("Reticle");
+        reticle.GetComponent<MeshRenderer>().material = TPDisabled;
+        right.enableInputActions = false;
+
 
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other == reticle.GetComponent<MeshCollider>())
-        {
-            reticle.GetComponent<MeshRenderer>().material = TPEnabled;
-            right.enableInputActions = true;
-        }
+        reticle = GameObject.Find("Reticle");
+        reticle.GetComponent<MeshRenderer>().material = TPEnabled;
+        right.enableInputActions = true;
+
     }
 }
