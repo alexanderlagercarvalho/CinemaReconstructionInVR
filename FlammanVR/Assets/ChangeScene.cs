@@ -13,15 +13,13 @@ public class ChangeScene : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "XR Origin")
-        {
-            if (sceneIndex == 0) 
-                SceneManager.LoadScene(1);
-            else
-                SceneManager.LoadScene(0);
-        }
 
+    
+    public void TPActivate()
+    {
+        if (sceneIndex == 0)
+            SceneManager.LoadScene(1);
+        else
+            SceneManager.LoadScene(0);
     }
 }
