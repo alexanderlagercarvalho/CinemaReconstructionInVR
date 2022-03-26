@@ -732,7 +732,7 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Select Value",
@@ -756,7 +756,7 @@
                     "name": "Activate Value",
                     "type": "Value",
                     "id": "c3ca6ed7-3d25-44a2-b1d8-5be4eb699370",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Touch",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -802,8 +802,8 @@
                 {
                     "name": "",
                     "id": "1ce80054-410d-4112-a332-50faa7fb4f23",
-                    "path": "<XRController>{RightHand}/gripPressed",
-                    "interactions": "",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Select",
