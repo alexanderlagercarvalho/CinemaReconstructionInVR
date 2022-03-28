@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0a822c202cf478748af887019f9e971e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 667852f1ebd5af141a658f680d8c0771, type: 2}
+  _assetPath: Assets/Lobby/Textures/metalsubstance001.sbsar
