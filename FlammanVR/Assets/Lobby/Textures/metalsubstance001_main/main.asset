@@ -140,8 +140,7 @@ MonoBehaviour:
     GenerateAllOutputs: 0
     GenerateAllMipmaps: 0
     DefaultPreset: " <sbspreset pkgurl=\"pkg://MetalPlain\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"665442015\" type=\"8\" value=\"10,10\" />\n
-      </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"665442015\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
     CurrentStatePreset: " <sbspreset pkgurl=\"pkg://MetalPlain\" label=\"\" >\n 
       <presetinput identifier=\"$outputsize\" uid=\"665442015\" type=\"8\" value=\"12,12\"
       />\n  <presetinput identifier=\"Metal_Lightness\" uid=\"1404085946\" type=\"0\"
