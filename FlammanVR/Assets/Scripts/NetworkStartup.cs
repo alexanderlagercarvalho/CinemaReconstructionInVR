@@ -9,8 +9,8 @@ public class NetworkStartup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        if (SceneTransitionHandler.Instance.InitalizeAsHost)
+        
+        if (SceneTransitionHandler.Instance.InitializeAsHost)
         {
             NetworkManager.Singleton.StartHost();
 
@@ -19,7 +19,7 @@ public class NetworkStartup : MonoBehaviour
         {
             NetworkManager.Singleton.StartClient();
         }
-        */
+        
     }
 
     // Update is called once per frame
