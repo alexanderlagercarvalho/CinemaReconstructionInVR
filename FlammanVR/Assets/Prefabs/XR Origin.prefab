@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3141e7d6063a456eac143c28a90d61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
+  hand: {fileID: 6162322391894585359}
 --- !u!1 &7077205075289177999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3141e7d6063a456eac143c28a90d61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
+  hand: {fileID: 1674428560355769438}
 --- !u!1001 &2272167426895856556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2455,7 +2455,7 @@ Animator:
   m_GameObject: {fileID: 6141886985234857762}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 221f19c60ea6b8e44a8a951790614261, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ccefe6696b89941f3bf31a1f5bafe983, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2476,4 +2476,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eaec3f4d45994566a794e3640d15c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 10
