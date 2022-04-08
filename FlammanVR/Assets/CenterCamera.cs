@@ -19,6 +19,7 @@ public class CenterCamera : MonoBehaviour
     void Update()
     {
         CapsuleFollowHead();
+        
     }
     private void CapsuleFollowHead()
     {
