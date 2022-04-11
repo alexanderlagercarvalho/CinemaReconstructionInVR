@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4627297138674410656}
   - component: {fileID: 7669708593276773823}
   - component: {fileID: 1331024840334413121}
-  - component: {fileID: 3623402967701029428}
   - component: {fileID: 6676036822141605523}
+  - component: {fileID: 3882042911256852953}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -97,20 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3623402967701029428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3545285507786952642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885f5988b355a9847997c7aa8acd8cae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chairSeat: {fileID: 3643664707154692825}
-  chair: {fileID: 5099528120467335585}
 --- !u!64 &6676036822141605523
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -125,6 +111,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6827640314013697367, guid: 38144869eb55c7640bedfa1fca8a777b, type: 3}
+--- !u!114 &3882042911256852953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545285507786952642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885f5988b355a9847997c7aa8acd8cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chairSeat: {fileID: 3643664707154692825}
+  chair: {fileID: 5099528120467335585}
 --- !u!1 &5099528120467335585
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 609308545499611333}
-        m_TargetAssemblyTypeName: ChangeGravity, Assembly-CSharp
+      - m_Target: {fileID: 2812421716788880873}
+        m_TargetAssemblyTypeName: FlipSeat, Assembly-CSharp
         m_MethodName: changeMass
         m_Mode: 1
         m_Arguments:
@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 7022199008506018801}
   - component: {fileID: 8133192792383472138}
   - component: {fileID: 7446305578819561581}
+  - component: {fileID: 3387784001407434665}
   m_Layer: 6
   m_Name: LeftArm
   m_TagString: Untagged
@@ -454,9 +455,23 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1296976969852645106, guid: 38144869eb55c7640bedfa1fca8a777b, type: 3}
+--- !u!114 &3387784001407434665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5764870619633064308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdded0d1bf230341838430c354ce5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TPEnabled: {fileID: 2100000, guid: 2a191bb2f9fe8d74d9908e1dbdc98ec3, type: 2}
+  TPDisabled: {fileID: 2100000, guid: 0f01152078bf0d742b952bb892548fe8, type: 2}
 --- !u!1 &6085729783664494986
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +565,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: 38144869eb55c7640bedfa1fca8a777b, type: 3}
 --- !u!1 &7436077648903490858
@@ -565,6 +580,7 @@ GameObject:
   - component: {fileID: 1835616037212296822}
   - component: {fileID: 7431553694369871820}
   - component: {fileID: 5030541705233275424}
+  - component: {fileID: 2204039181538199786}
   m_Layer: 6
   m_Name: RightArm
   m_TagString: Untagged
@@ -646,9 +662,23 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3487192314196417999, guid: 38144869eb55c7640bedfa1fca8a777b, type: 3}
+--- !u!114 &2204039181538199786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7436077648903490858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdded0d1bf230341838430c354ce5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TPEnabled: {fileID: 2100000, guid: 2a191bb2f9fe8d74d9908e1dbdc98ec3, type: 2}
+  TPDisabled: {fileID: 2100000, guid: 0f01152078bf0d742b952bb892548fe8, type: 2}
 --- !u!1 &7782192306698377356
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,8 +691,8 @@ GameObject:
   - component: {fileID: 5157772758847655556}
   - component: {fileID: 6869412463720315034}
   - component: {fileID: 3643664707154692825}
-  - component: {fileID: 609308545499611333}
   - component: {fileID: 1501228727153986690}
+  - component: {fileID: 2812421716788880873}
   m_Layer: 8
   m_Name: Seat
   m_TagString: Untagged
@@ -744,23 +774,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6827640314013697367, guid: 38144869eb55c7640bedfa1fca8a777b, type: 3}
---- !u!114 &609308545499611333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7782192306698377356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f5c8b8a18fdd4b45b3b1925aef94652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seat: {fileID: 7782192306698377356}
-  seatMeshChecker: {fileID: 6676036822141605523}
 --- !u!114 &1501228727153986690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,6 +875,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 6410417748256328060}
+--- !u!114 &2812421716788880873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7782192306698377356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630eadf8eb0a5cb499e1208cd6cf5528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seat: {fileID: 7782192306698377356}
+  seatMeshChecker: {fileID: 6676036822141605523}
 --- !u!1 &8732967134003473224
 GameObject:
   m_ObjectHideFlags: 0
