@@ -13,10 +13,12 @@ public class RemoveSeatMesh : MonoBehaviour
     {
         CapsuleCollider collider = (CapsuleCollider) other;
         chairSeat.enabled = false;
-        collider.GetComponent<Transform>().position += new Vector3(0, -0.5f, 0.1f);
-        collider.GetComponent<Transform>().localRotation = new Quaternion(0, 0, 0, 1);
-        
-        
+        Vector3 rotAmount = chair.GetComponent<Transform>().eulerAngles;
+        rotAmount.y += 180;
+        collider.GetComponent<Transform>().rotation = Quaternion.Euler(rotAmount); //new Quaternion(0, 0, 0, 1);
+        collider.GetComponent<Transform>().position += new Vector3(0, -0.5f, -0.1f);
+
+
     }
     private void OnTriggerExit(Collider other)
     {

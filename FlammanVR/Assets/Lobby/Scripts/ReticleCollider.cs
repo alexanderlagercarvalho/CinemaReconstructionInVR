@@ -26,7 +26,7 @@ public class ReticleCollider : MonoBehaviour
     void Update()
     {
 
-        reticle = GameObject.Find("Reticle");
+        //reticle = GameObject.Find("Reticle");
 
     }
     private void OnTriggerStay(Collider other)

@@ -7,7 +7,7 @@ public class FlipSeat : MonoBehaviour
 {
     public GameObject seat;
     public MeshCollider seatMeshChecker;
-    private bool seatFolded = false;
+    private bool seatFolded;
     private Vector3 startRotation = new Vector3(80, 0, 0);
     private Vector3 stopRotation = new Vector3(-80, 0, 0);
     private Vector3 up = new Vector3(-0.092022419f,1.67871296f+0.5f,-0.806179047f+1.3f);
@@ -16,6 +16,7 @@ public class FlipSeat : MonoBehaviour
 
     public void Start()
     {
+        seatFolded = true;
         seat.GetComponent<TeleportationAnchor>().enabled = false;
         seatMeshChecker.enabled = false;
         foldedSeatOffset = (up - down) / 5;
@@ -26,7 +27,7 @@ public class FlipSeat : MonoBehaviour
     {
         seatFolded = !seatFolded;
         Transform transform = seat.GetComponent<Transform>();
-        if (!seatFolded)
+        if (seatFolded)
         {
             foldSeat();
         }
