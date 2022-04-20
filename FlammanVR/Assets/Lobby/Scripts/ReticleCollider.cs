@@ -31,8 +31,10 @@ public class ReticleCollider : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        reticle = GameObject.Find("Reticle");
+        reticle = other.transform.parent.gameObject;
+        //reticle = GameObject.Find("Reticle");
         reticle.GetComponent<MeshRenderer>().material = TPDisabled;
+        
         right.enableInputActions = false;
 
 

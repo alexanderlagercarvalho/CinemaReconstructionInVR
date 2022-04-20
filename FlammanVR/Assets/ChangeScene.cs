@@ -7,6 +7,12 @@ public class ChangeScene : MonoBehaviour
 {
     int sceneIndex;
 
+    private void Start()
+    {
+        
+        //SceneManager.LoadSceneAsync(1);
+    }
+
     private void Update()
     {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
