@@ -9,19 +9,26 @@ public class LightSwitch : MonoBehaviour
     public float unlitSides;
     public float litRoof;
     public float unlitRoof;
-    public Light[] roofLights;
-    public Light[] sideLights;
+    public List<Light> roofLights;
+    public List<Light> sideLights;
 
-
+    private void Start()
+    {
+        for (int i = 1; i <11; i++)
+        {
+            roofLights.Add(GameObject.Find("Roof" + i).GetComponent<Light>());
+            sideLights.Add(GameObject.Find("Side" + i).GetComponent<Light>());
+        }
+    }
     public void LightsOff()
     {
         foreach (Light light in roofLights)
         {
-            light.intensity = unlitSides;
+            light.enabled = false;
         }
         foreach (Light light in sideLights)
         {
-            light.intensity = unlitSides;
+            light.enabled = false;
         }
 
     }
@@ -29,11 +36,11 @@ public class LightSwitch : MonoBehaviour
     {
         foreach (Light light in roofLights)
         {
-            light.intensity = litSides;
+            light.enabled = true;
         }
         foreach (Light light in sideLights)
         {
-            light.intensity = litSides;
+            light.enabled = true;
         }
     }
 }

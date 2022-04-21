@@ -392,10 +392,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca86d66cdc5da148bd9342c0065e1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  litSides: 0
+  litSides: 0.7
   unlitSides: 0
-  litRoof: 0
+  litRoof: 1.5
   unlitRoof: 0
+  roofLights: []
   sideLights:
   - {fileID: 0}
   - {fileID: 0}
