@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
-using UnityEditor.XR.Interaction.Toolkit;
+//using UnityEditor.XR.Interaction.Toolkit;
 using UnityEngine;
 
 public class RemoveSeatMesh : MonoBehaviour
