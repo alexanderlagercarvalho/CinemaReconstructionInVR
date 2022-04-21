@@ -397,17 +397,7 @@ MonoBehaviour:
   litRoof: 1.5
   unlitRoof: 0
   roofLights: []
-  sideLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  sideLights: []
 --- !u!1 &5442534089979533594
 GameObject:
   m_ObjectHideFlags: 0
