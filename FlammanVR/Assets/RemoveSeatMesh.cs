@@ -19,7 +19,6 @@ public class RemoveSeatMesh : MonoBehaviour
         collider.GetComponent<Transform>().position += new Vector3(0, -0.5f, -0.1f);
         chair.GetComponent<LightSwitch>().LightsOff();
 
-
     }
     private void OnTriggerExit(Collider other)
     {
