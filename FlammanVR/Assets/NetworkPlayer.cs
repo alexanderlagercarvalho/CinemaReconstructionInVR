@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.XR;
 using Photon.Pun;
 using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
+
 public class NetworkPlayer : MonoBehaviour
 {
     public Transform head;
@@ -20,8 +22,9 @@ public class NetworkPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         photonView = GetComponent<PhotonView>();
-        XRRig rig = FindObjectOfType<XRRig>();
+        XROrigin rig = FindObjectOfType<XROrigin>();
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
@@ -29,6 +32,7 @@ public class NetworkPlayer : MonoBehaviour
         {
             item.enabled = false;
         }
+        Debug.Log("Everything in order");
     }
 
     // Update is called once per frame
