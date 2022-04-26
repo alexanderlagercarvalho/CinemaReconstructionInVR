@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HighlightOnSelect : MonoBehaviour
 {
-    public GameObject gameObject;
+    //public GameObject gameObject;
     public Material material;
     private Color startcolor = new Color(0.5283019f, 0.3475811f, 0.236739f, 1);
 

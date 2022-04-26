@@ -3600,7 +3600,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ae67af2e2b836d34689f3d33a40fa165,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -201.662
+      value: -201.623
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae67af2e2b836d34689f3d33a40fa165,
         type: 3}
@@ -3637,10 +3637,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -678588488315902003, guid: ae67af2e2b836d34689f3d33a40fa165,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5178bb23aa0ae764aaaa523bdb2a7e04, type: 2}
     - target: {fileID: 919132149155446097, guid: ae67af2e2b836d34689f3d33a40fa165,
         type: 3}
       propertyPath: m_Name
       value: projector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: ae67af2e2b836d34689f3d33a40fa165,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae67af2e2b836d34689f3d33a40fa165, type: 3}
@@ -11409,7 +11419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399881922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00959, y: 0.09774, z: 0.0222}
+  m_LocalPosition: {x: 0.0096, y: 0.0977, z: 0.0317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -13379,7 +13389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455039549}
   m_LocalRotation: {x: 0.00000002980233, y: -0.000000002172357, z: 0.13552754, w: 0.9907736}
-  m_LocalPosition: {x: 0.31125, y: 0.09764, z: 0.022}
+  m_LocalPosition: {x: 0.31125, y: 0.09764, z: 0.0272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -21424,7 +21434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744744900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -36435,7 +36445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274359254}
   m_LocalRotation: {x: 0.00000002980233, y: -0.000000002172357, z: 0.13552754, w: 0.9907736}
-  m_LocalPosition: {x: 0.33887, y: -0.10943, z: 0.004}
+  m_LocalPosition: {x: 0.3389, y: -0.1094, z: 0.008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -36901,7 +36911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289881867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0167, y: -0.1114, z: -0.017}
+  m_LocalPosition: {x: -0.0167, y: -0.1114, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -50186,7 +50196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727660971}
   m_LocalRotation: {x: 0.00000002980233, y: -0.000000002172357, z: 0.13552754, w: 0.9907736}
-  m_LocalPosition: {x: 0.32391, y: 0.00271, z: 0.0165}
+  m_LocalPosition: {x: 0.32391, y: 0.00271, z: 0.0188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 979535041}
@@ -51892,6 +51902,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 818abb43f92a09b439d43634bb02538a, type: 3}
   - {fileID: 32900000, guid: 04f4085a81e5b134ea2b0299539c66e0, type: 3}
   movie: {fileID: 32900000, guid: ecfc5a799d3328646aa117b67f2ed998, type: 3}
+  videoMaterial: {fileID: 2100000, guid: 385560a640bcc704f84df0bb705c8805, type: 2}
 --- !u!328 &1796284925
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -56341,7 +56352,7 @@ GameObject:
   - component: {fileID: 1891862095}
   - component: {fileID: 1891862094}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: ScreenLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56359,8 +56370,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.54
-  m_Range: 27.16
+  m_Intensity: 0.12
+  m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
