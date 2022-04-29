@@ -24,7 +24,7 @@ public class NetworkPlayer : MonoBehaviour
         XRRig rig = FindObjectOfType<XRRig>();
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
-        rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
+        rightHandRig = rig.transform.Find("Camera Offset/RightHandController");
         foreach(var item in GetComponentsInChildren<Renderer>())
         {
             item.enabled = false;

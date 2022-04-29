@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinemaRoomScene.unity
     guid: d36ad1d93f484ae459bea5fe693026d5
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d6ae3a8afe8495c4e8723875ce06a4c7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
