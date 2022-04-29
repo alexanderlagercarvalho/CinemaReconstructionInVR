@@ -18,4 +18,5 @@ public class HighlightOnSelect : MonoBehaviour
     {
         material.SetColor("_Color",startcolor);
     }
+
 }

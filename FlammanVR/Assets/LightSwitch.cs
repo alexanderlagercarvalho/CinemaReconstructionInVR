@@ -23,7 +23,7 @@ public class LightSwitch : MonoBehaviour
         }
         screenLight = GameObject.Find("ScreenLight").GetComponent<Light>();
         lampMaterial = GameObject.Find("Lamp").GetComponent<Renderer>().material ;
-        screenLight.enabled = false;
+        //screenLight.enabled = false;
     }
     public void LightsOff()
     {
@@ -49,7 +49,7 @@ public class LightSwitch : MonoBehaviour
         {
             light.enabled = true;
         }
-        screenLight.enabled = false;
+        //screenLight.enabled = false;
         lampMaterial.EnableKeyword("_EMISSION");
     }
 }
