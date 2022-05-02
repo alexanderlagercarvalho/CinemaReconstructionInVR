@@ -47,8 +47,8 @@ public class NetworkPlayer : MonoBehaviour
         {
             
             MapPosition(head, headRig);
-            MapPosition(head, leftHandRig);
-            MapPosition(head, rightHandRig);
+            MapPosition(leftHand, leftHandRig);
+            MapPosition(rightHand, rightHandRig);
 
 
         }
