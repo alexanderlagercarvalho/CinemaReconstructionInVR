@@ -11,6 +11,8 @@ public class LightSwitch : MonoBehaviour
     public float unlitRoof;
     public List<Light> roofLights;
     public List<Light> sideLights;
+    public Light screenLight;
+    public Material lampMaterial;
 
     private void Start()
     {
@@ -19,6 +21,9 @@ public class LightSwitch : MonoBehaviour
             roofLights.Add(GameObject.Find("Roof" + i).GetComponent<Light>());
             sideLights.Add(GameObject.Find("Side" + i).GetComponent<Light>());
         }
+        screenLight = GameObject.Find("ScreenLight").GetComponent<Light>();
+        lampMaterial = GameObject.Find("Lamp").GetComponent<Renderer>().material ;
+        //screenLight.enabled = false;
     }
     public void LightsOff()
     {
@@ -30,6 +35,8 @@ public class LightSwitch : MonoBehaviour
         {
             light.enabled = false;
         }
+        screenLight.enabled = true;
+        lampMaterial.DisableKeyword("_EMISSION");
 
     }
     public void LightsOn()
@@ -42,5 +49,7 @@ public class LightSwitch : MonoBehaviour
         {
             light.enabled = true;
         }
+        //screenLight.enabled = false;
+        lampMaterial.EnableKeyword("_EMISSION");
     }
 }

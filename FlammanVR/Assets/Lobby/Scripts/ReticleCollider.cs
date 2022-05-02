@@ -22,27 +22,12 @@ public class ReticleCollider : MonoBehaviour
         right = controller.GetComponent<ActionBasedController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        //reticle = GameObject.Find("Reticle");
-
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        reticle = other.transform.parent.gameObject;
-        //reticle = GameObject.Find("Reticle");
-        reticle.GetComponent<MeshRenderer>().material = TPDisabled;
-        
-        right.enableInputActions = false;
-
-
-    }
+    
     private void OnTriggerEnter(Collider other)
     {
         reticle = GameObject.Find("Reticle");
-        reticle.GetComponent<MeshRenderer>().material = TPDisabled;
+        if (reticle != null)
+            reticle.GetComponent<MeshRenderer>().material = TPDisabled;
         right.enableInputActions = false;
 
 
@@ -50,7 +35,8 @@ public class ReticleCollider : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         reticle = GameObject.Find("Reticle");
-        reticle.GetComponent<MeshRenderer>().material = TPEnabled;
+        if (reticle != null)
+            reticle.GetComponent<MeshRenderer>().material = TPEnabled;
         right.enableInputActions = true;
 
     }

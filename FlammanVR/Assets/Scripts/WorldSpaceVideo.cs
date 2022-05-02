@@ -7,6 +7,7 @@ public class WorldSpaceVideo : MonoBehaviour
 {
     public VideoClip[] trailerClips;
     public VideoClip movie;
+    public Material videoMaterial;
 
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
@@ -21,15 +22,19 @@ public class WorldSpaceVideo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        videoClipIndex = 0;
-        videoPlayer.clip = trailerClips[0];
-        videoPlayer.Play();
+     
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void StartMovie()
+    {
+        videoClipIndex = 0;
+        videoPlayer.clip = trailerClips[0];
+        videoPlayer.Play();
     }
 
     void EndReached(VideoPlayer video)
@@ -48,6 +53,7 @@ public class WorldSpaceVideo : MonoBehaviour
 
     void PlayMovie()
     {
+        videoMaterial.EnableKeyword("_EMISSION");
         videoPlayer.clip = movie;
         videoPlayer.Play();
     }

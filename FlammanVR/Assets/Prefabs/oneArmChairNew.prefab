@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 1360415720098928184}
   - component: {fileID: 487862044377905756}
   - component: {fileID: 7683971664123002335}
+  - component: {fileID: 1419290456461568498}
   m_Layer: 8
   m_Name: Seat
   m_TagString: Untagged
@@ -422,7 +423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5335528291936581940}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e2f4617667341945b5a7756e14b62d0, type: 3}
   m_Name: 
@@ -512,6 +513,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1419290456461568498}
+        m_TargetAssemblyTypeName: StartMovie, Assembly-CSharp
+        m_MethodName: PlayMovie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 6418976698510665309}
 --- !u!114 &7683971664123002335
 MonoBehaviour:
@@ -527,6 +540,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seat: {fileID: 5335528291936581940}
   seatMeshChecker: {fileID: 6341809854638271597}
+--- !u!114 &1419290456461568498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335528291936581940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd27d64cad0d0947ac2b2e019a4d0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cinemaScreen: {fileID: 0}
 --- !u!1 &6396737972533054192
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +645,9 @@ GameObject:
   - component: {fileID: 7816706886904287907}
   - component: {fileID: 8899726583873358852}
   - component: {fileID: 3644586322427122596}
+  - component: {fileID: 9201936023718652286}
+  - component: {fileID: 2455398660619418632}
+  - component: {fileID: 4731782687793515921}
   m_Layer: 6
   m_Name: oneArmChairNew
   m_TagString: Untagged
@@ -654,7 +683,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7435818825061746713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
@@ -757,6 +786,186 @@ MonoBehaviour:
   unlitRoof: 0
   roofLights: []
   sideLights: []
+  screenLight: {fileID: 0}
+  lampMaterial: {fileID: 0}
+--- !u!114 &9201936023718652286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435818825061746713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd27d64cad0d0947ac2b2e019a4d0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cinemaScreen: {fileID: 0}
+--- !u!114 &2455398660619418632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435818825061746713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb761813ef7fc94d877ba9605d7e9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chairMaterial: {fileID: 2100000, guid: 167d82f3462d9d845a4ebd2c056b1a4a, type: 2}
+  chairHighlight: {fileID: 2100000, guid: 388c9db235bee454bbd5c9078e5bdcaa, type: 2}
+  backrest: {fileID: 8466950793834244146}
+  seat: {fileID: 5335528291936581940}
+--- !u!114 &4731782687793515921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435818825061746713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2f4617667341945b5a7756e14b62d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 7944692878452960530}
+  - {fileID: 7950422650495321904}
+  - {fileID: 1360415720098928184}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_SelectMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2455398660619418632}
+        m_TargetAssemblyTypeName: HighlightChair, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2455398660619418632}
+        m_TargetAssemblyTypeName: HighlightChair, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 3
+  m_TeleportTrigger: 2
+  m_Teleporting:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1528991548372284699, guid: d9bf6d13f1587c14b8b342ad3493ed64,
+          type: 3}
+        m_TargetAssemblyTypeName: ResetHeadsetOffset, Assembly-CSharp
+        m_MethodName: resetOffset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7683971664123002335}
+        m_TargetAssemblyTypeName: FlipSeat, Assembly-CSharp
+        m_MethodName: changeMass
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9201936023718652286}
+        m_TargetAssemblyTypeName: StartMovie, Assembly-CSharp
+        m_MethodName: PlayMovie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_TeleportAnchorTransform: {fileID: 6418976698510665309}
 --- !u!1 &7670685657790609570
 GameObject:
   m_ObjectHideFlags: 0
