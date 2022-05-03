@@ -5270,7 +5270,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 3
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -13205,7 +13205,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -34703,7 +34703,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -57017,6 +57017,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 818abb43f92a09b439d43634bb02538a, type: 3}
   - {fileID: 32900000, guid: 04f4085a81e5b134ea2b0299539c66e0, type: 3}
   movie: {fileID: 32900000, guid: ecfc5a799d3328646aa117b67f2ed998, type: 3}
+  videoMaterial: {fileID: 0}
 --- !u!328 &1980322796
 VideoPlayer:
   m_ObjectHideFlags: 0
