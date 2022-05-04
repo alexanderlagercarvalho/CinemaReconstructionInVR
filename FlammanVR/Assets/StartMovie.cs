@@ -11,6 +11,7 @@ public class StartMovie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        photonView = GetComponent<PhotonView>();
         cinemaScreen = GameObject.Find("NewCinemaScreen");
     }
 
