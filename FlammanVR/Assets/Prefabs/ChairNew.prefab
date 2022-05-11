@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2454132146210386781}
   - component: {fileID: 20159828533528833}
   - component: {fileID: 1009459211118521611}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 1331024840334413121}
   - component: {fileID: 6676036822141605523}
   - component: {fileID: 3882042911256852953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: -7731568770705621027}
   - component: {fileID: 4427376546734808127}
   - component: {fileID: 4437580259198040243}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ChairNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,8 +401,6 @@ MonoBehaviour:
   unlitRoof: 0
   roofLights: []
   sideLights: []
-  screenLight: {fileID: 0}
-  lampMaterial: {fileID: 0}
 --- !u!114 &-7731568770705621027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +603,7 @@ GameObject:
   - component: {fileID: 5862376853664741341}
   - component: {fileID: 123539486473756873}
   - component: {fileID: 8581504566778631332}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WoodBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +686,7 @@ GameObject:
   - component: {fileID: 8133192792383472138}
   - component: {fileID: 7446305578819561581}
   - component: {fileID: 3387784001407434665}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +796,7 @@ GameObject:
   - component: {fileID: 696396419514714823}
   - component: {fileID: 6347872448105346602}
   - component: {fileID: 5928399336011419285}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +893,7 @@ GameObject:
   - component: {fileID: 7431553694369871820}
   - component: {fileID: 5030541705233275424}
   - component: {fileID: 2204039181538199786}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1238,7 @@ GameObject:
   - component: {fileID: 1771397771132655918}
   - component: {fileID: 2453084121049663858}
   - component: {fileID: 3648851805363634193}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: UpperWoodPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}

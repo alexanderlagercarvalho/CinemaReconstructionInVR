@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2009749685444419329}
   - component: {fileID: 2882290496783710019}
   - component: {fileID: 3142409089843372046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7185239910499164197}
   - component: {fileID: 6341809854638271597}
   - component: {fileID: 5216310627381324509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 5104358125239899764}
   - component: {fileID: 7950422650495321904}
   - component: {fileID: 2918780684774518494}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 4134648598742841494}
   - component: {fileID: 288062285764946122}
   - component: {fileID: 1393634835689103785}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: UpperWoodPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 9201936023718652286}
   - component: {fileID: 2455398660619418632}
   - component: {fileID: 4731782687793515921}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: oneArmChairNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -786,8 +786,6 @@ MonoBehaviour:
   unlitRoof: 0
   roofLights: []
   sideLights: []
-  screenLight: {fileID: 0}
-  lampMaterial: {fileID: 0}
 --- !u!114 &9201936023718652286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,7 +987,7 @@ GameObject:
   - component: {fileID: 8119748981058000485}
   - component: {fileID: 2324590367923847537}
   - component: {fileID: 6261090840834110748}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WoodBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1069,7 @@ GameObject:
   - component: {fileID: 2908873215849966463}
   - component: {fileID: 8785485236074649490}
   - component: {fileID: 7944692878452960530}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
