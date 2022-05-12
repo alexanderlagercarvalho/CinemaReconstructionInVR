@@ -22,7 +22,7 @@ public class StartMovie : MonoBehaviour
         cinemaScreen.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
         cinemaScreen.GetComponent<Renderer>().material.SetColor("White", Color.white);
     }
-   public void PlayMovieRPC()
+    public void PlayMovieRPC()
     {
         photonView.RPC("PlayMovie", RpcTarget.All);
     }

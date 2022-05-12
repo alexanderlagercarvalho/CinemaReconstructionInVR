@@ -58,8 +58,5 @@ public class FlipSeat : MonoBehaviour
         seat.GetComponent<TeleportationAnchor>().enabled = false;
         seatMeshChecker.enabled = false;
     }
-    public void changeMassRPC()
-    {
-        photonView.RPC("changeMass", RpcTarget.All);
-    }
+  
 }
