@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using Photon.Pun;
 
 public class FlipSeat : MonoBehaviour
 {
+    PhotonView photonView;
     public GameObject seat;
     public MeshCollider seatMeshChecker;
     private bool seatFolded;
@@ -18,6 +20,7 @@ public class FlipSeat : MonoBehaviour
 
     public void Start()
     {
+        photonView = GetComponent<PhotonView>();
         seatFolded = true;
         seat.GetComponent<TeleportationAnchor>().enabled = false;
         seatMeshChecker.enabled = false;
@@ -25,6 +28,7 @@ public class FlipSeat : MonoBehaviour
     }
 
 
+    [PunRPC]
     public void changeMass()
     {
         seatFolded = !seatFolded;
@@ -53,5 +57,9 @@ public class FlipSeat : MonoBehaviour
         transform.localPosition = transform.localPosition - foldedSeatOffset;
         seat.GetComponent<TeleportationAnchor>().enabled = false;
         seatMeshChecker.enabled = false;
+    }
+    public void changeMassRPC()
+    {
+        photonView.RPC("changeMass", RpcTarget.All);
     }
 }
