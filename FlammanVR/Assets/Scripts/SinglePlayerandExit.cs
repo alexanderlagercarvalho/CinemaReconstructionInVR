@@ -7,7 +7,7 @@ public class SinglePlayerandExit : MonoBehaviour
 
     public void SinglePLayerScene()
     {
-        Debug.Log("SinglePlayerLoad")
+        Debug.Log("SinglePlayerLoad");
         SceneManager.LoadScene("SinglePlayerScene");
     }
     public void ExitGame()
