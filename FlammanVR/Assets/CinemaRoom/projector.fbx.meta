@@ -84,6 +84,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material.016
     second: {fileID: 2100000, guid: f26eb57b3b4cb66479eab3ac9559aa89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: purple plastic
+    second: {fileID: 2100000, guid: 730848aae0e05e7498643a4cc7755e24, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

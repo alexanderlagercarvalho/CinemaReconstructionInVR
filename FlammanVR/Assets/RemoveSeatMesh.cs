@@ -12,7 +12,6 @@ public class RemoveSeatMesh : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         CapsuleCollider collider = (CapsuleCollider) other;
-        chairSeat.enabled = false;
         Vector3 rotAmount = chair.GetComponent<Transform>().eulerAngles;
         rotAmount.y += 180;
         collider.GetComponent<Transform>().rotation = Quaternion.Euler(rotAmount); //new Quaternion(0, 0, 0, 1);
@@ -25,5 +24,9 @@ public class RemoveSeatMesh : MonoBehaviour
         chairSeat.enabled = true;
         chairSeat.GetComponent<FlipSeat>().changeMass();
         chair.GetComponent<LightSwitch>().LightsOn();
+    }
+    public void removeCollider()
+    {
+        chairSeat.enabled = false;
     }
 }

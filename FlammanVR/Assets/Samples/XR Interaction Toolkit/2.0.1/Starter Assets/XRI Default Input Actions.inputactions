@@ -750,13 +750,13 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Activate Value",
                     "type": "Value",
                     "id": "c3ca6ed7-3d25-44a2-b1d8-5be4eb699370",
-                    "expectedControlType": "Touch",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -802,7 +802,7 @@
                 {
                     "name": "",
                     "id": "1ce80054-410d-4112-a332-50faa7fb4f23",
-                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -825,7 +825,7 @@
                     "name": "",
                     "id": "fa59aed1-ae0b-4074-a58c-294b85f46228",
                     "path": "<XRController>{RightHand}/triggerPressed",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Activate",
@@ -1032,7 +1032,7 @@
                     "name": "",
                     "id": "919c4a6c-22ed-4083-8e14-f30e91ff59fe",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
-                    "interactions": "Sector(directions=-1,sweepBehavior=3)",
+                    "interactions": "Sector(directions=-1,sweepBehavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Teleport Select",

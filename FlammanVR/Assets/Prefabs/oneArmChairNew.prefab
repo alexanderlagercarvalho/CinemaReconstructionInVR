@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2009749685444419329}
   - component: {fileID: 2882290496783710019}
   - component: {fileID: 3142409089843372046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7185239910499164197}
   - component: {fileID: 6341809854638271597}
   - component: {fileID: 5216310627381324509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 5104358125239899764}
   - component: {fileID: 7950422650495321904}
   - component: {fileID: 2918780684774518494}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 5
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 4134648598742841494}
   - component: {fileID: 288062285764946122}
   - component: {fileID: 1393634835689103785}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: UpperWoodPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 2455398660619418632}
   - component: {fileID: 4731782687793515921}
   - component: {fileID: -4152138944490395798}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: oneArmChairNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -787,8 +787,6 @@ MonoBehaviour:
   unlitRoof: 0
   roofLights: []
   sideLights: []
-  screenLight: {fileID: 0}
-  lampMaterial: {fileID: 0}
 --- !u!114 &9201936023718652286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,7 +837,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -966,6 +964,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5216310627381324509}
+        m_TargetAssemblyTypeName: RemoveSeatMesh, Assembly-CSharp
+        m_MethodName: removeCollider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 6418976698510665309}
 --- !u!114 &-4152138944490395798
 MonoBehaviour:
@@ -1000,7 +1010,7 @@ GameObject:
   - component: {fileID: 8119748981058000485}
   - component: {fileID: 2324590367923847537}
   - component: {fileID: 6261090840834110748}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: WoodBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1092,7 @@ GameObject:
   - component: {fileID: 2908873215849966463}
   - component: {fileID: 8785485236074649490}
   - component: {fileID: 7944692878452960530}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
