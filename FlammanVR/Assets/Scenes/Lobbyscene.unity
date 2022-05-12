@@ -64582,7 +64582,7 @@ PrefabInstance:
     - target: {fileID: 4731782687793515921, guid: 9aacc73744e970948a2d6ce24da1d54d,
         type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: changeMassRPC
+      value: changeMass
       objectReference: {fileID: 0}
     - target: {fileID: 5099830857141103762, guid: 9aacc73744e970948a2d6ce24da1d54d,
         type: 3}
